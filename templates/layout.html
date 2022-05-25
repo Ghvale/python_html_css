@@ -16,7 +16,7 @@
             <a href="">Logout</a>
             {% endif %}
         </div>
-        {% for mensagem in get_flashed_mesanges() %}
+        {% for mensagem in get_flashed_messages() %}
             <div class="flash"> {{mensagem}} </div>
         {% endfor %}
         {% block corpo %}{% endblock %}
